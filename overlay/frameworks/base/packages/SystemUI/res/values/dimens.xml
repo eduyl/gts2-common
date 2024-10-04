@@ -21,4 +21,8 @@
      for different hardware and product builds. -->
 <resources>
     <dimen name="standard_notification_panel_width">520dp</dimen>
+    
+<!-- Whether to post reset runnable for all clients. Needed for some older
+         vendor fingerprint HAL implementations. -->
+    <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
 </resources>

@@ -92,9 +92,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
 # Fingerprint
-#PRODUCT_PACKAGES += \
-#    android.hardware.biometrics.fingerprint@2.1-service.samsung \
-#    libbauthtzcommon_shim
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.samsung \
+    libbauthtzcommon_shim
 
 # Flat device tree for boot image
 PRODUCT_HOST_PACKAGES += \
@@ -194,7 +194,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     device/samsung/gts2-common/overlay
 
 # Permissions
-#     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
+PRODUCT_COPY_FILES += \
+     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \

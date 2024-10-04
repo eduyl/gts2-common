@@ -19,9 +19,9 @@
 
 #include <cutils/log.h>
 
-int BAuth_Hat_OP(void *dest, int dummy)
+int BAuth_Hat_OP(int arg0 __unused, int arg1 __unused, int arg2 __unused, int arg3 __unused, int arg4 __unused, int arg5 __unused)
 {
-    ALOGV("SHIM: hijacking %s!", __func__);
+    ALOGW("SHIM: hijacking %s!", __func__);
 
     /*
      * This function is supposed to pass the hardware authentication token

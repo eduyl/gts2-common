@@ -19,6 +19,7 @@ type debugfs_oom, fs_type, debugfs_type;
 type debugfs_regulator, fs_type, debugfs_type;
 
 # efs types
+type biometrics_data_file, file_type, data_file_type, core_data_file_type;
 type baro_delta_factoryapp_efs_file, file_type;
 type drm_efs_file, file_type;
 type factorymode_factoryapp_efs_file, file_type;
